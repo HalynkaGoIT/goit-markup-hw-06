@@ -19,12 +19,13 @@
   <!--#region Header-->
   <header class="page-header">
     <div class="container header-container">
+
       <nav class="page-nav">
         <a href="./index.html" class="logo logo-head">Web<span class="logospan">Studio</span></a>
         <ul class="menu-nav">
           <li><a href="./index.html" class="menu-list current">Studio</a></li>
-          <li><a href="" class="menu-list">Portfolio</a></li>
-          <li><a href="" class="menu-list">Contacts</a></li>
+          <li><a href="#portfolio" class="menu-list">Portfolio</a></li>
+          <li><a href="#footer" class="menu-list">Contacts</a></li>
         </ul>
       </nav>
 
@@ -39,7 +40,7 @@
         </ul>
       </address>
       <!-- #region Burger-menu -->
-      <button class="burger-menu-btn" type="button">
+      <button class="burger-menu-btn js-open-menu" type="button">
         <svg class="burger-icon" width="24" height="24">
           <use href="./images/icons.svg#icon-burger_menu"></use>
         </svg>
@@ -48,7 +49,7 @@
     <!-- #region mobile-menu -->
     <div class="mobile-menu">
       <div class="container mobile-menu-container">
-        <button class="close-btn" type="button">
+        <button class="close-btn js-close-menu" type="button">
           <svg class="icon" width="8" height="8">
             <use href="./images/icons.svg#close-mark"></use>
           </svg>
@@ -56,10 +57,11 @@
         <nav class="mobile-menu-nav">
           <ul class="mobile-menu-nav-list">
             <li><a href="./index.html" class="mobile-menu-nav-link current">Studio</a></li>
-            <li><a href="" class="mobile-menu-nav-link">Portfolio</a></li>
-            <li><a href="" class="mobile-menu-nav-link">Contacts</a></li>
+            <li><a href="#portfolio" class="mobile-menu-nav-link">Portfolio</a></li>
+            <li><a href="#footer" class="mobile-menu-nav-link">Contacts</a></li>
           </ul>
         </nav>
+
         <address class="mobile-menu-contacts">
           <ul class="mobile-menu-contacts-list">
             <li>
@@ -71,30 +73,31 @@
 
           </ul>
         </address>
+
         <div class="mobile-menu-social">
           <ul class="mobile-menu-social-list">
-            <li class="mobile-social-link">
+            <li class="social-link">
               <a class="icons-social-link" href="#">
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="mobile-social-link">
+            <li class="social-link">
               <a class="icons-social-link" href="#">
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="mobile-social-link">
+            <li class="social-link">
               <a class="icons-social-link" href="#">
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="mobile-social-link">
+            <li class="social-link">
               <a class="icons-social-link" href="#">
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-LinkedIn"></use>
@@ -116,7 +119,7 @@
     <section class="section hero-section">
       <div class="container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button type="button" class="button">Order Service</button>
+        <button type="button" class="button js-open-form">Order Service</button>
       </div>
     </section>
     <!-- #endregion section Hero -->
@@ -187,14 +190,14 @@
     <!-- #region Our Team -->
     <section class="section team-box-section">
       <div class="container">
-        <h2 class="title-team-box">Our Team</h2>
+        <h2 class="title">Our Team</h2>
         <ul class="team-list">
           <li class="team-card">
             <img class="member-photo" srcset="./images/team/Mark@1x.jpg 1x,
              ./images/team/Mark@2x.jpg 2x" src="./images/team/Mark@1x.jpg" alt="Mark Guerrero" width="264"
               height="260" />
             <div class="team-card-descript">
-              <h3 class="team-name">Mark Guerrero</h3>
+              <h3 class="describe-title">Mark Guerrero</h3>
               <p class="team-position">Product Designer</p>
               <ul class="social-icons-list">
                 <li class="social-link">
@@ -233,7 +236,7 @@
                          ../images/team/Tom@2x.jpg 2x" src="./images/team/Tom@1x.jpg" alt="Tom Ford" width="264"
               height="260" />
             <div class="team-card-descript">
-              <h3 class="team-name">Tom Ford</h3>
+              <h3 class="describe-title">Tom Ford</h3>
               <p class="team-position">Frontend Developer</p>
               <ul class="social-icons-list">
                 <li class="social-link">
@@ -272,7 +275,7 @@
                          ./images/team/Camila@2x.jpg 2x" src="./images/team/Camila@1x.jpg" alt="Camila Garcia"
               width="264" height="260" />
             <div class="team-card-descript">
-              <h3 class="team-name">Camila Garcia</h3>
+              <h3 class="describe-title">Camila Garcia</h3>
               <p class="team-position">Marketing</p>
               <ul class="social-icons-list">
                 <li class="social-link">
@@ -311,7 +314,7 @@
                          ./images/team/Daniel@2x.jpg 2x" src="./images/team/Daniel@1x.jpg" alt="Daniel Wilson"
               width="264" height="260" />
             <div class="team-card-descript">
-              <h3 class="team-name">Daniel Wilson</h3>
+              <h3 class="describe-title">Daniel Wilson</h3>
               <p class="team-position">UI Designer</p>
               <ul class="social-icons-list">
                 <li class="social-link">
@@ -352,8 +355,8 @@
 
 
     <!-- #region Portfolio -->
-    <section class="section portfolio-content">
-      <div class="container">
+    <section class="section portfolio-content" id="portfolio">
+      <div class=" container">
         <h2 class="title">Our Portfolio</h2>
         <ul class="portfolio-list">
           <li class="portfolio-card">
@@ -379,7 +382,7 @@
             </div>
 
             <div class="portfolio-card-descript">
-              <h3 class="portfolio-name">Banking App</h3>
+              <h3 class="describe-title">Banking App</h3>
               <p class="portfolio-category">App</p>
             </div>
           </li>
@@ -407,7 +410,7 @@
             </div>
 
             <div class="portfolio-card-descript">
-              <h3 class="portfolio-name">Cashless Payment</h3>
+              <h3 class="describe-title">Cashless Payment</h3>
               <p class="portfolio-category">Marketing</p>
             </div>
           </li>
@@ -434,7 +437,7 @@
             </div>
 
             <div class="portfolio-card-descript">
-              <h3 class="portfolio-name">Meditation App</h3>
+              <h3 class="describe-title">Meditation App</h3>
               <p class="portfolio-category">App</p>
             </div>
           </li>
@@ -462,7 +465,7 @@
             </div>
 
             <div class="portfolio-card-descript">
-              <h3 class="portfolio-name">Taxi Service</h3>
+              <h3 class="describe-title">Taxi Service</h3>
               <p class="portfolio-category">Marketing</p>
             </div>
           </li>
@@ -488,7 +491,7 @@
             </div>
 
             <div class="portfolio-card-descript">
-              <h3 class="portfolio-name">Screen Illustrations</h3>
+              <h3 class="describe-title">Screen Illustrations</h3>
               <p class="portfolio-category">Design</p>
             </div>
 
@@ -515,7 +518,7 @@
               </p>
             </div>
             <div class="portfolio-card-descript">
-              <h3 class="portfolio-name">Online Courses</h3>
+              <h3 class="describe-title">Online Courses</h3>
               <p class="portfolio-category">Marketing</p>
             </div>
           </li>
@@ -525,42 +528,44 @@
     <!-- #endregion Portfolio -->
   </main>
 
-  <!-- <footer class="foot-box">
-    <div class="footer-container">
+  <footer class="foot-box" id="footer">
+    <div class="container footer-container">
+
       <div class="footer-discript">
-        <a href="./index.html" class="foot-logo">Web<span class="foot-logospan">Studio</span></a>
+        <a href="./index.html" class="logo footer-logo">Web<span class="logospan">Studio</span></a>
         <p class="foot-text">
           Increase the flow of customers and sales for your business with
           digital marketing & growth solutions.
         </p>
       </div>
-      
+
       <div class="social-media">
-        <p class="social-media-text">Social media</p>
-        <ul class="social-media-list">
-          <li class="icons-list">
-            <a class="icons-footer" href="#">
+        <p class="footer-form-text">Social media</p>
+
+        <ul class="social-icons-list">
+          <li class="social-link">
+            <a class="icons-social-link" href="https://www.instagram.com/" target="_blank">
               <svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="icons-list">
-            <a class="icons-footer" href="#">
+          <li class="social-link">
+            <a class="icons-social-link" href="https://x.com" target="_blank">
               <svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
-          <li class="icons-list">
-            <a class="icons-footer" href="#">
+          <li class="social-link">
+            <a class="icons-social-link" href="https://www.facebook.com/" target="_blank">
               <svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
-          <li class="icons-list">
-            <a class="icons-footer" href="#">
+          <li class="social-link">
+            <a class="icons-social-link" href="https://www.linkedin.com/" target="_blank">
               <svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-LinkedIn"></use>
               </svg>
@@ -575,26 +580,28 @@
           <label class="footer-label">
             <input class="footer-input-email" type="email" id="e-mail" name="e-mail" placeholder="E-mail" />
           </label>
+
           <button type="submit" class="button-subscribe">
             Subscribe
-            <svg class="subscribe" width="24" height="24">
+            <svg class="icon" width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
           </button>
         </form>
       </div>
     </div>
-  </footer> -->
+  </footer>
 
   <!-- modal window  -->
 
-  <!-- <div class="backdrop is-open">
+  <div class="backdrop">
     <div class="modal">
-      <button class="modal-close-btn" type="button">
+      <button class="close-btn js-close-form" type="button">
         <svg class="close-icon" width="8" height="8">
           <use href="./images/icons.svg#close-mark"></use>
         </svg>
       </button>
+
       <p class="modal-title">Leave your contacts and we will call you back</p>
       <form autocomplete="off">
         <div class="modern-wrapper">
@@ -627,27 +634,59 @@
           </div>
         </div>
 
-        <div class="modal-field">
+        <div class="contact-form-comment">
           <label class="modal-label" for="user-comment">Comment</label>
-          
-          <textarea class="modal-textarea" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
-          
+
+          <textarea class="modal-input" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
+
         </div>
 
         <div class="checkbox-wrapper">
           <input class="checkbox-input visually-hidden" id="user-privacy" type="checkbox" value="true"
             name="user-privacy" />
-          <label class="modal-label-accept" for="user-privacy">
+          <label class="modal-label" for="user-privacy">
             <span class="modal-check">
               <svg width="10" height="8">
                 <use href="./images/icons.svg#icon-chekmark"></use>
-              </svg> </span>I accept the terms and conditions of the<a class="privacy-link" href="">Privacy
-              Policy</a></label>
+              </svg>
+            </span>
+            <span>
+              I accept the terms and conditions of the<a class="privacy-link" href="#">Privacy
+                Policy</a></span></label>
         </div>
-        <button class="modal-submit-btn" type="submit">Send</button>
+        <button class="button" type="submit">Send</button>
       </form>
     </div>
-  </div> -->
+  </div>
+
+  <!-- #region MODAL SCRIPT -->
+  <script>
+    // close modal
+    document.querySelector('.js-close-form').addEventListener('click', () => {
+      document.querySelector('.backdrop').classList.remove('is-open');
+    });
+    // open modal
+    document.querySelector('.js-open-form').addEventListener('click', () => {
+      document.querySelector('.backdrop').classList.add('is-open');
+    });
+
+    // close menu
+    document.querySelector('.js-close-menu').addEventListener('click', () => {
+      document.querySelector('.mobile-menu').classList.remove('is-open');
+    });
+    // open menu
+    document.querySelector('.js-open-menu').addEventListener('click', () => {
+      document.querySelector('.mobile-menu').classList.add('is-open');
+    });
+
+    document.querySelectorAll('.mobile-menu-nav a').forEach(element => {
+      element.addEventListener('click', () => {
+        document.querySelector('.mobile-menu').classList.remove('is-open');
+      });
+    });
+  </script>
+  <!-- #endregion -->
+
 </body>
 
 </html>
