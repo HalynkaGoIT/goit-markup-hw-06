@@ -440,6 +440,7 @@ color: #404bbf;
 
 .mobile-menu-contacts {
     display: block;
+    font-style: normal;
     padding-bottom: 48px;
 }
 .mobile-menu-contacts-list {
